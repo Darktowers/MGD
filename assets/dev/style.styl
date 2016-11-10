@@ -1,0 +1,651 @@
+@import "nib"
+@import "nib/vendor"
+@import "animate.styl"
+@import "owl.carousel.styl"
+@import "normalize.styl"
+/* Utilities */
+negro = #1c303f
+img
+    width: 100%
+html
+body
+    width: 100%;
+    height: 100%;
+    color: #1c303f;
+#Home
+    display: flex
+#Stages
+    height: auto !important
+    padding-bottom: 2
+#Registrate
+    padding-bottom: 2em
+.twhite
+    color: white !important
+.wrap
+    max-width: 1230px;
+    margin: 0 auto
+.txtNormal
+    color: negro
+/* Header */
+.headerWhite
+    position: fixed;
+    width: 100%;
+    box-shadow: 1px 3px 8px #e4e4e4;
+    z-index: 2;
+    background: white !important
+    display: none
+    .active
+        border-bottom: 4px solid !important
+    .headerCont
+        padding: 0 !important
+        .headerMenu
+            height: 115px;
+            display: flex;
+            align-items: center;
+            ul
+                color #07b8ff !important
+                li
+                    transition: all .5s ease-in-out
+                    border-bottom: 4px solid transparent;
+            .registrate
+                height: 115px;
+                display: flex;
+                align-items: center;
+                background: #03A9F4;
+                padding: 0 1em;
+                color: white;
+                cursor: pointer
+                transition: all .3s ease-in-out
+                &:hover
+                    background: #00BCD4  
+                p
+                    padding-bottom: .3em;
+.headerTransp
+    background: none !important
+    position:absolute
+    top 0
+    width: 100%
+    padding-top: 2em;
+.header
+    background: black;
+    transition: all .7s ease-in-out 
+    z-index: 2;
+    .headerCont
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 2em 0;
+        .headerLogo
+            max-width: 100px;
+            transition: all .8s ease-in-out
+            cursor: pointer
+            img
+                width: 100%;
+                height: auto;
+                transition: all .8s ease-in-out
+        .headerMenu
+            ul
+                display: flex;
+                margin: 0;
+                padding: 0;
+                color: white;
+                list-style: none;
+                li
+                    padding: 1em 0;
+                    margin: 0 1em;
+                    cursor: pointer
+/*Homw*/
+b
+    font-weight: bold;
+.scroll
+    border: 2px solid #9E9E9E;
+    position: relative;
+    width: 20px;
+    height: 38px;
+    border-radius: 20px;
+    display: inline-block
+    margin-top: 8em;
+    div
+        position: relative;
+        top: calc(25% - 2px);
+        left: calc(50% - 2px);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #9E9E9E
+.bold
+    font-weight: normal
+    font-family: "MontserratBold";
+.section
+    height: 100%;
+    width: 100%;
+    position: relative;
+.home
+    .back
+        position: absolute
+        top 0
+        z-index: -1
+        width: 100%
+        height: 100%
+    .wrap
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10em;
+        padding-right: 14em;
+        padding-left: 6em;
+        .homeTextCont
+            .homeTitle
+                font-size: 6em;
+                margin: 0;
+                font-weight: lighter;
+                color: white;
+            .containerButton
+                margin-top: 2em;
+            .btn        
+                padding: 1em 2em;
+                background: #ff2c5e;
+                color: white;
+                outline: 0;
+                border-radius: 5px;
+                margin-top: 2em;
+                margin: 0
+                border: 0;
+                margin-top: 2em;
+                cursor: pointer;
+
+        .homeImageCont
+            max-width: 400px;
+            img
+                width: 100%;
+                height: auto;
+
+/*ignition*/
+.ignition
+    .back
+        position: absolute
+        bottom 0
+        z-index: -1
+    .wrap
+        text-align: center
+        .ignitionTitle
+            h2
+                font-size: 5em
+                text-align: center
+                font-weight: lighter;
+                margin: 0;
+                box-sizing: border-box;
+                position: relative;
+                top: 1em;
+                padding-top: 1em;
+
+
+        .cardContainer
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 9em 10em 0;
+            .card
+                max-width: 530px;
+                min-height: 235px;
+                background: #fff;
+                padding: 1em 3em;
+                box-sizing: border-box;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                box-shadow: 1px 3px 8px #757a7d;
+                text-align: left
+                p
+                    margin: 0;
+                    line-height: 1.5;
+                    word-spacing: 4px;
+                    font-size: 1.2em;
+/* Stages */
+.backTransp
+    background: rgba(255, 255, 255, 0.6) !important
+.backTransp2
+    background: rgba(255, 255, 255, 0.35) !important
+    box-shadow: 1px 3px 8px #9E9E9E;
+#imagenes
+    .pop
+        max-width: 100% !important;
+.stages
+    .back
+        position: absolute
+        top: 0
+        z-index: -1
+    .back2
+        position: absolute
+        bottom: 0
+        z-index: -1
+    .wrap
+        padding-right: 6em;
+        padding-left: 6em;
+        text-align: center
+        padding-top: 4em;
+        padding-bottom: 3em;
+        .stagesTitle
+            text-align: left
+            max-width: 80%
+            h2
+                font-size: 5em
+                text-align: left
+                font-weight: lighter;
+                margin: 0;
+                box-sizing: border-box;
+                padding-top: 1em;
+                
+        .metas
+            display: flex
+            justify-content: center
+            height: 243px;
+            padding-top 2em
+            .meta
+                display: flex;
+                flex-direction: column
+                position: relative
+                margin: 0 .3em;
+                
+                h3
+                    text-align: left
+                .lineacont
+                    width: 100%;
+                    position: absolute;
+                    height: 100%;
+                    .linea 
+                        width: 100%;
+                        height: 7px;
+                        background: #f00;
+                        position: absolute;
+                        top: 5.4em;
+                        
+                .contpuntos
+                    display: flex;
+                    justify-content: space-around;
+                    .puntoscont
+                        text-align: center
+                        padding: 1em;
+                        min-width: 100px;
+                        z-index: 1;
+                        .punto
+                            width: 20px;
+                            height: 20px;
+                            background: red;
+                            border-radius: 50%;
+                            display: inline-block;
+            .primera
+                justify-content: flex-start
+                .lineacont
+                    .linea 
+                        top: 5.4em;
+                        background: #fcb9be
+                .contpuntos
+                    .puntoscont
+                        .punto
+                            background: #fcb9be;
+  
+            .segunda
+                justify-content: center
+                .lineacont
+                    .linea 
+                        top: 8.4em;
+                        background: #ff6b8e
+                .contpuntos
+                    .puntoscont
+                        .punto
+                            background: #ff6b8e;
+                
+            .tercera
+                justify-content: flex-end
+                .lineacont
+                    .linea 
+                        top: 11.7em;
+                        background: #ff2c5e
+                .contpuntos
+                    .puntoscont
+                        .punto
+                            background: #ff2c5e;
+            .bandera
+                justify-content: flex-start
+                img
+                    max-width: 70px;
+            .trofeo
+                justify-content: flex-end
+                img
+                    max-width: 70px;
+/* Programa */
+.programa
+    .back
+        position: absolute
+        top 0
+        z-index: -1
+    .wrap
+        text-align: center
+        padding-top: 4em;
+        .programaTitle
+            h2
+                font-size: 5em
+                text-align: center
+                font-weight: lighter;
+                margin: 0;
+                box-sizing: border-box;
+                padding-top: 1em;
+        .cardContainer
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 7em 10em 0;
+            .card
+                min-height: 235px;
+                padding: 1em 1em;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                text-align: left
+                flex-direction: column;
+                margin: 1em;
+                text-align: center;
+                max-width: 200px;
+                
+                img
+                    max-width: 80px
+                p
+                    margin: 0;
+                    line-height: 1.5;
+                    word-spacing: 4px;
+/* mentores */
+.mentores
+    .back
+        position: absolute
+        bottom 0
+        z-index: -1
+        height: 100%
+    .wrap
+        text-align: center
+        .wrapmentores
+            display: flex
+            padding: 0 3em
+            padding-top: 4em;
+        .mentoresTitle
+            h2
+                font-size: 5em
+                text-align: left
+                font-weight: lighter;
+                margin: 0;
+                box-sizing: border-box;
+                padding-top: 1em;
+            p
+                text-align: left
+        .cardContainer
+            display: flex;
+            justify-content: space-around;
+            padding: 7em 10em 0;
+            .mentoresSlider
+                display: flex;
+                flex-direction: column;
+                max-width: 320px
+
+            .card
+                width: 300px;
+                min-height: 444px;
+                background: #fff;
+                padding: 1em 2em;
+                box-sizing: border-box;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                box-shadow: 1px 3px 8px #757a7d;
+                text-align: left
+                flex-direction: column
+                text-align: center
+                margin: 1em
+                
+                img
+                    max-width: 215px;
+                p
+                    margin: 0;
+                    line-height: 1.5;
+                    word-spacing: 4px;
+.owl-controls
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top 0
+    .owl-nav
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .owl-prev
+            position: absolute;
+            left: -50px;
+            i
+                font-size: 2em;
+        .owl-next
+            position: absolute;
+            right: -50px;
+            i
+                font-size: 2em;
+/* registrate */ 
+.registratex
+    height: auto !important
+    .back
+        position: absolute
+        top 0
+        z-index: -1
+        height: 100%
+    .wrap
+        text-align: center
+        padding-top: 4em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .registrateTitle
+            h2
+                font-size: 5em
+                text-align: center
+                font-weight: lighter;
+                margin: 0;
+                box-sizing: border-box;
+            p
+                margin: 0
+        .modalForm
+            background: white;
+            max-width: 800px;
+            width: 100%;
+            padding: 1em;
+            box-sizing: border-box;
+            min-height: 500px;
+            border-radius: 10px;
+            .formCont
+                input[type=button]
+                input[type=submit]
+                    border: 0;
+                    background: #fe2b5d;
+                    color: white;
+                    padding: 1.5em 3em;
+                    font-size: 1.2em;
+                    border-radius: 9px;
+                    outline: 0;
+                    margin .5em
+                    cursor: pointer
+                    transition: all .3s ease-in-out
+                    &:hover
+                        background: #2feab1;
+                input[type=text]
+                input[type=email]
+                    border: 0;
+                    background: #EEEEEE;
+                    outline: 0;
+                    padding: .8em;
+                    box-sizing: border-box;
+                    margin: .5em;
+                    font-size: 1.3em;
+                    border-radius: 6px;
+                .check
+                    text-align: left
+                    padding: 1em 2em;
+                    a
+                        color: #fe2b5d;
+                        text-decoration: none;
+                        transition all .3s ease-in-out
+                        &:hover
+                            color: #2feab1;
+                            text-decoration: underline;
+                .textVer
+                    text-align: left
+                    padding: 0 2em;
+.contPop
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 150, 136, 0.65);
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none
+    .pop
+        min-height: 300px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        padding: 1em;
+        box-sizing: border-box;
+        border-radius: 12px;
+        position: relative;
+        .close
+            position: absolute;
+            top: -2em;
+            font-size: 1.5em;
+            right: -2em;
+            padding: .8em 1.1em;
+            color: #E91E63;
+            cursor: pointer;
+            background: white;
+            border-radius: 50%;
+            z-index: 3;
+            border: 1px solid #ccc;
+        .content
+            text-align: center;
+            form
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            i
+                font-size: 5em;
+                color: #4CAF50;
+            p
+                font-size: 1.1em;
+            input[type=button]
+                border: 0;
+                background: #fe2b5d;
+                color: #fff;
+                padding: 1em 3em;
+                font-size: 1.2em;
+                -webkit-border-radius: 9px;
+                border-radius: 9px;
+                outline: 0;
+                margin: .5em;
+                cursor: pointer;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+#term_caja
+    .pop
+        max-width: 415px;
+        .content
+            overflow: scroll;
+            width: 100%;
+            height: 400px;
+            overflow-x: auto;
+            box-sizing: border-box;
+            padding: 1em;
+            text-align: justify;
+
+
+@media screen and (max-width: 832px)
+    #Stages
+        .wrap
+            .metas
+                flex-direction: column;
+                height: auto;
+                .primera
+                .segunda
+                .tercera
+                    .lineacont
+                        .linea
+                            top: 5.4em;
+
+
+    .section
+        height: auto !important;
+        .wrap
+            .wrapmentores
+                flex-direction: column
+                align-items: center;
+
+
+@media screen and (max-width: 1024px)
+    .wrap
+        .homeTextCont
+            .homeTitle
+                font-size: 4em !important
+    .header
+        .headerCont
+            margin: 0em 3em !important
+    .mentores
+        height: auto !important;
+@media screen and (max-width: 768px)
+    #Home
+        .wrap
+            padding: 8em 2em;
+    #Ignition
+        .wrap
+            .cardContainer
+                flex-direction: column
+                align-items: center;
+                padding: 0;
+                padding-top: 5em;
+                .card
+                    margin: 1em
+                    width: 300px;
+    .programa
+        .wrap
+            .cardContainer
+                padding: 0 !important
+                flex-direction: column
+                align-items: center;
+    .wrap
+        .homeTextCont
+            .homeTitle
+                font-size: 3em !important
+    .header
+        .headerCont
+            margin: 0em 3em !important
+            .headerLogo
+                img
+                    width: 300px !important
+            .headerMenu
+                display: none
+    .section
+        height: auto !important;
+        .wrap
+            .wrapmentores
+                flex-direction: column
+                .cardContainer
+                    flex-direction: column
+                    padding: 0 !important
+                    .card
+                        margin: 1em
+
+
+
